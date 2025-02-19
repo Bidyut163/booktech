@@ -10,7 +10,7 @@ export const CartCard = ({ product }) => {
                 <Link to={`/products/${product.id}`}>
                     <img
                         className="w-32 rounded"
-                        src={product.image_local}
+                        src={product.poster}
                         alt={product.name}
                     />
                 </Link>
