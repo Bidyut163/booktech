@@ -15,11 +15,11 @@ export const CartCard = ({ product }) => {
                     />
                 </Link>
                 <div className="">
-                    <a href="">
+                    <Link to={`/products/${product.id}`}>
                         <p className="text-lg ml-2 dark:text-slate-200">
                             {product.name}
                         </p>
-                    </a>
+                    </Link>
                     <button
                         onClick={() => removeFromCart(product)}
                         className="text-base ml-2 text-red-400"
